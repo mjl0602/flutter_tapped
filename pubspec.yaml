@@ -1,8 +1,8 @@
 name: tapped
 description: Tapped is an easy use widget like UIButtonSystemButtom in iOS.
 version: 1.0.0
-author:
-homepage:
+author: Ma Jialun <675531696@qq.com>
+homepage: https://github.com/mjl0602/flutter_tapped
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -15,6 +15,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+# flutter packages pub publish --server=https://pub.dartlang.org
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
