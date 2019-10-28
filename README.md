@@ -1,7 +1,15 @@
 # tapped
 
 Tapped is an easy use widget like UIButtonSystemButtom in iOS.
+一个类似iOS系统按钮的效果Widget，套在任何组件上，该组件就会获得一个简单的按下动画，支持长按与短按。
 
+# Usage
+```dart
+  return Tapped(
+    child:Text('submit'),
+    onTap:()=>print('did tap'),
+  )
+```
 ## Getting Started
 
 This project is a starting point for a Dart
