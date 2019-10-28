@@ -46,10 +46,12 @@ class _TappedState extends State<Tapped> with TickerProviderStateMixin {
         await Future.delayed(Duration(milliseconds: 100));
         widget.onTap?.call();
       },
-      onLongPress: () async {
-        await Future.delayed(Duration(milliseconds: 100));
-        widget.onLongTap?.call();
-      },
+      onLongPress: widget.onLongTap == null
+          ? null
+          : () async {
+              await Future.delayed(Duration(milliseconds: 100));
+              widget.onLongTap();
+            },
       onTapDown: (detail) async {
         _tapDown = true;
         _isChangeAlpha = true;
