@@ -23,6 +23,9 @@ class _TappedState extends State<Tapped> with TickerProviderStateMixin {
       parent: _controller,
       curve: Curves.easeInOutCubic,
     );
+    _animation.addListener(() {
+      this.setState(() {});
+    });
     super.initState();
   }
 
@@ -38,9 +41,7 @@ class _TappedState extends State<Tapped> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     Duration duration = const Duration(milliseconds: 50);
     Duration showDuration = const Duration(milliseconds: 660);
-    _animation.addListener(() {
-      this.setState(() {});
-    });
+    
     return GestureDetector(
       onTap: () async {
         await Future.delayed(Duration(milliseconds: 100));
