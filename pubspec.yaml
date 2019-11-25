@@ -1,8 +1,8 @@
 name: tapped
-description: Tapped is an easy use widget like UIButtonSystemButtom in iOS.
-version: 1.0.0
-author: Ma Jialun <675531696@qq.com>
-homepage: https://github.com/mjl0602/flutter_tapped
+description: Tapped is an easy-use widget like UIButtonSystemButtom on iOS.
+version: 1.0.2
+author: mjl0602<675531696@qq.com>
+homepage: https://github.com/mjl0602
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
