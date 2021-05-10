@@ -1,3 +1,4 @@
+## [2.0.0-nullsafety.0] - Add Nullsafety.
 ## [1.0.2] - Add Example.
 
 * Add Example.
